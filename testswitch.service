@@ -1,0 +1,11 @@
+[Unit]
+Description=Test Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/sh <BASE_DIR>/testswitch/start.sh
+
+[Install]
+WantedBy=multi-user.target
